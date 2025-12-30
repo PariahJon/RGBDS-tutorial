@@ -1,6 +1,6 @@
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/constants.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/constants.inc"
 
 SECTION "Player Variables", WRAM0 
 
@@ -11,7 +11,7 @@ wPlayerPositionY:: dw
 mPlayerFlash: dw
 SECTION "Player", ROM0
 
-playerShipTileData: INCBIN "src/generated/sprites/player-ship.2bpp"
+playerShipTileData: INCBIN "galactic-armada/src/generated/sprites/player-ship.2bpp"
 playerShipTileDataEnd:
 
 playerTestMetaSprite::

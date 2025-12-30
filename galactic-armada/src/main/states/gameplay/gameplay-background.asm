@@ -1,5 +1,5 @@
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/macros/text-macros.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/macros/text-macros.inc"
 
 SECTION "Background Variables", WRAM0
 
@@ -7,10 +7,10 @@ mBackgroundScroll:: dw
 
 SECTION "Gameplay Background Section", ROM0
 
-starFieldMap: INCBIN "src/generated/backgrounds/star-field.tilemap"
+starFieldMap: INCBIN "galactic-armada/src/generated/backgrounds/star-field.tilemap"
 starFieldMapEnd:
 
-starFieldTileData: INCBIN "src/generated/backgrounds/star-field.2bpp"
+starFieldTileData: INCBIN "galactic-armada/src/generated/backgrounds/star-field.2bpp"
 starFieldTileDataEnd:
 
 InitializeBackground::

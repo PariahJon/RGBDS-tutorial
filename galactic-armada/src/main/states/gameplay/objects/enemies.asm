@@ -1,5 +1,5 @@
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/constants.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/constants.inc"
 
 SECTION "Enemy Variables", WRAM0
 
@@ -18,7 +18,7 @@ wEnemies:: ds MAX_ENEMY_COUNT * PER_ENEMY_BYTES_COUNT
 
     SECTION "Enemies", ROM0
 
-enemyShipTileData:: INCBIN "src/generated/sprites/enemy-ship.2bpp"
+enemyShipTileData:: INCBIN "galactic-armada/src/generated/sprites/enemy-ship.2bpp"
 enemyShipTileDataEnd::
 
 enemyShipMetasprite::

@@ -1,14 +1,14 @@
-INCLUDE "src/main/utils/hardwar.inc"
-INCLUDE "src/main/utils/macros/text-macros.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/macros/text-macros.inc"
 
 SECTION "Title Screen State", ROM0
 
 PressPlayText:: db "press a to play", 255
 
-titleScreenTileData: INCBIN "src/generated/backgrounds/title-screen.2bpp"
+titleScreenTileData: INCBIN "galactic-armada/src/generated/backgrounds/title-screen.2bpp"
 titleScreenTileDataEnd:
 
-titleScreenTileMap: INCBIN "src/generated/backgrounds/title-screen.tilemap"
+titleScreenTileMap: INCBIN "galactic-armada/src/generated/backgrounds/title-screen.tilemap"
 titleScreenTileMapEnd:
 InitTitleScreenState::
 

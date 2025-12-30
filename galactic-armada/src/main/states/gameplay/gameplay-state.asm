@@ -1,5 +1,5 @@
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/macros/text-macros.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/macros/text-macros.inc"
 
 SECTION "Gameplay Variables", WRAM0 
 

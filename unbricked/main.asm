@@ -1,4 +1,4 @@
-INCLUDE "hardware.inc"
+INCLUDE "unbricked/hardware.inc"
 
 DEF BRICK_LEFT EQU $05
 DEF BRICK_RIGHT EQU $06

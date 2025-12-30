@@ -1,6 +1,6 @@
 
-INCLUDE "src/main/utils/hardware.inc"
-INCLUDE "src/main/utils/constants.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/constants.inc"
 
 SECTION "Bullet Variables", WRAM0 
 
@@ -23,7 +23,7 @@ bulletMetasprite::
     .metasprite1 db 0,0,8,0
     .metaspriteEnd db 128
 
-bulletTileData:: INCBIN "src/generated/sprites/bullet.2bpp"
+bulletTileData:: INCBIN "galactic-armada/src/generated/sprites/bullet.2bpp"
 bulletTileDataEnd::
 
 

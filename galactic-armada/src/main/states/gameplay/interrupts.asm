@@ -1,5 +1,5 @@
 
-INCLUDE "src/main/utils/hardware.inc"
+INCLUDE "galactic-armada/src/main/utils/hardware.inc"
 
 SECTION "Interrupts", ROM0
 
