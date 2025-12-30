@@ -1,4 +1,4 @@
-INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "src/main/utils/hardware.inc"
 
 SECTION "Background", ROM0
 

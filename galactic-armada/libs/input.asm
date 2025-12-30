@@ -4,7 +4,7 @@
 ; So it's best to use some tested code
 ;;;;;
 
-INCLUDE "galactic-armada/src/main/utils/hardware.inc"
+INCLUDE "src/main/utils/hardware.inc"
 
 SECTION "Input", ROM0
 

@@ -1,5 +1,5 @@
 
-INCLUDE "galactic-armada/src/main/utils/constants.inc"
+INCLUDE "src/main/utils/constants.inc"
 SECTION "Metasprite Variables", WRAM0 
 
 wMetaspriteAddress:: dw

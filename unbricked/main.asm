@@ -1,4 +1,4 @@
-INCLUDE "unbricked/hardware.inc"
+INCLUDE "hardware.inc"
 
 DEF BRICK_LEFT EQU $05
 DEF BRICK_RIGHT EQU $06
@@ -124,12 +124,12 @@ WaitVBlank2:
 BounceOnTop:
     ; Remember to offset the OAM position!
     ; (8, 16) in OAM coordinates is (0, 0) on the screen.
-    ld a, [_OAMRAM + 4]
-    sub a, 16 + 1
-    ld c, a
     ld a, [_OAMRAM + 5]
     sub a, 8
     ld b, a
+    ld a, [_OAMRAM + 4]
+    sub a, 16 + 1
+    ld c, a
     call GetTileByPixel ; Returns tile address in hl
     ld a, [hl]
     call IsWallTile
@@ -139,12 +139,12 @@ BounceOnTop:
     ld [wBallMomentumY], a
 
 BounceOnRight:
-    ld a, [_OAMRAM + 4]
-    sub a, 16
-    ld c, a
     ld a, [_OAMRAM + 5]
     sub a, 8 - 1
     ld b, a
+    ld a, [_OAMRAM + 4]
+    sub a, 16
+    ld c, a
     call GetTileByPixel
     ld a, [hl]
     call IsWallTile
@@ -154,12 +154,12 @@ BounceOnRight:
     ld [wBallMomentumX], a
 
 BounceOnLeft:
-    ld a, [_OAMRAM + 4]
-    sub a, 16
-    ld c, a
     ld a, [_OAMRAM + 5]
     sub a, 8 + 1
     ld b, a
+    ld a, [_OAMRAM + 4]
+    sub a, 16
+    ld c, a
     call GetTileByPixel
     ld a, [hl]
     call IsWallTile
@@ -169,12 +169,12 @@ BounceOnLeft:
     ld [wBallMomentumX], a
 
 BounceOnBottom:
-    ld a, [_OAMRAM + 4]
-    sub a, 16 - 1
-    ld c, a
     ld a, [_OAMRAM + 5]
     sub a, 8
     ld b, a
+    ld a, [_OAMRAM + 4]
+    sub a, 16 - 1
+    ld c, a
     call GetTileByPixel
     ld a, [hl]
     call IsWallTile
@@ -771,6 +771,10 @@ wNewKeys: db
 SECTION "Ball Data", WRAM0
 wBallMomentumX: db
 wBallMomentumY: db
+wBallX: db
+wBallY: db
+wBallXPrev: db
+wBallYPrev: db
 
 SECTION "Score", WRAM0
 wScore: db
